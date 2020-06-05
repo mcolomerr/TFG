@@ -1,4 +1,4 @@
-# TFG
+# Analysis of NMII spatial distribution
 
 In this site you can find all the files I have coded for my Bachelor Thesis. It consists on the following:
 - intensity_macro.ijm: batch-processing macro for the program Fiji to track the intensity of a ROI over all the frames
