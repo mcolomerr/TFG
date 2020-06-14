@@ -1,3 +1,8 @@
+%Exemplary configuration file for doing simulations
+%using Cytosim 
+%@Colomer-Rosell M
+
+
 %sim_actin
 
 %variable number of myosins
@@ -6,7 +11,7 @@
 
 set simul system
 {
-    time_step = 0.01
+    time_step = 0.01 %s
 }
 
 set space cell 
@@ -16,27 +21,27 @@ set space cell
 
 new cell
 {
-    radius = 4
+    radius = 4 %um
 }
 
 set fiber actin
 {
-    rigidity = 0.075
-    segmentation = 0.1
+    rigidity = 0.075 %pN
+    segmentation = 0.1 
     confine = inside, 2000, cell
 }
 
 new 250 actin
 {
-    length = 2, 0.2
+    length = 2, 0.2 %um
 }
 
 set hand motor
 {
-    binding_rate = 10
-    binding_range = 0.1
-    unbinding_rate = 0.1
-    unbinding_force = 6
+    binding_rate = 10 %s^-1
+    binding_range = 0.1  %s^-1
+    unbinding_rate = 0.1  %s^-1
+    unbinding_force = 6 %pN
 
     display = ( color=green; size=4; )
     
@@ -50,18 +55,18 @@ set couple myosin
     hand1 = motor
     hand2 = motor
     diffusion = 10
-    length = 0.1
+    length = 0.1 %um
     stiffness = 100
 }
 
-new [[N]] couple myosin
+new [[N]] couple myosin %the number of myosins is variable
 
 set hand binder
 {
-    binding_rate = 10
-    binding_range = 0.1
-    unbinding_rate = 1
-    unbinding_force = 6
+    binding_rate = 10 %s^-1
+    binding_range = 0.1 %s^-1
+    unbinding_rate = 1 %s^-1
+    unbinding_force = 6 %pN
 
     display = ( color=blue; size=4; )
 }
@@ -71,7 +76,7 @@ set couple crosslinker
     hand1 = binder
     hand2 = binder
     diffusion = 10
-    length = 0.1
+    length = 0.1 %um
     stiffness = 100
 }
 
