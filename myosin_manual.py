@@ -1,4 +1,5 @@
-# MYOSIN MANUAL ANALYSIS
+#Script that analyses the manual tracks of myosins
+#@mcolomerrosell
 
 """IMPORTING LIBRARIES"""
 import pandas as pd
