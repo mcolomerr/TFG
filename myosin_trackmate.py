@@ -1,4 +1,7 @@
-# Trackmate analysis
+#Script that analyses the output files of
+#trackmate plugin
+#@mcolomerrosell
+
 
 """IMPORTING LIBRARIES"""
 import pandas as pd
