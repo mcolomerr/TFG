@@ -1,3 +1,10 @@
+#Script that process the Cytosim output files of myosin tracks
+#and analysis the diffusion movement of the particles
+#and the contraction of the network 
+#@mcolomerrosell
+
+
+#Importing libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
