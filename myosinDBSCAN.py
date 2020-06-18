@@ -1,3 +1,8 @@
+#Script that analyses the clustering of single particles
+#using the DBSCAN clustering algorithm
+#@mcolomerrosell
+
+
 """IMPORTING LIBRARIES"""
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -44,9 +49,7 @@ def DBSCAN_clustering(data, frame):
 
 #defining frame number
 
-
 filename = 'thunderstorm_bleb_offstetBigger0-1_removeBorders.csv'
-
 filename = 'thunderstorm_time.csv'
 
 
@@ -57,7 +60,6 @@ data['POSITION_Y'] = data['y [nm]']/1000
 dataHeatMap = pd.DataFrame() #creates a new dataframe that's empty
 
 numParticles = []
-
 for i in range(int(max(data['frame']))):
     frame = i+1
     xTracksFrame, yTracksFrame = obtainTracksFrame(data, frame)
